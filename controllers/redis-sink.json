@@ -1,0 +1,22 @@
+{
+    "name": "RedisSinkConnectorConnector_0",
+    "config": {
+        "name": "RedisSinkConnectorConnector_0",
+        "connector.class": "com.redis.kafka.connect.RedisSinkConnector",
+        "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+        "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+        "topics": "postgres.public.students",
+        "redis.host": "redis",
+        "redis.port": "6379",
+        "transforms": "ExtractAfter, InsertRedisKey",
+        "transforms.ExtractAfter.type": "org.apache.kafka.connect.transforms.ExtractField$Value",
+        "transforms.ExtractAfter.field": "after",
+        "transforms.InsertRedisKey.type": "org.apache.kafka.connect.transforms.ValueToKey",
+        "transforms.InsertRedisKey.fields": "id",
+        "transforms.InsertRedisKey.key.converter": {
+            "type": "org.apache.kafka.connect.storage.StringConverter"
+        },
+        "transforms.InsertRedisKey.target.type": "org.apache.kafka.connect.transforms.HoistField$Key",
+        "transforms.InsertRedisKey.target.field": "fullname"
+    }
+}

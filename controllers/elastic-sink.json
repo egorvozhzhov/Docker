@@ -1,0 +1,17 @@
+{
+    "name": "elastic-sink",
+    "config": {
+      "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+      "tasks.max": "1",
+      "topics": "postgres.public.class_materials",
+      "key.ignore": "false",
+      "connection.url": "http://elasticsearch:9200/",
+      "type.name": "_doc",
+      "schema.ignore": "true",
+      "transforms": "ExtractAfter, FilterFields",
+      "transforms.ExtractAfter.type": "org.apache.kafka.connect.transforms.ExtractField$Value",
+      "transforms.ExtractAfter.field": "after",
+      "transforms.FilterFields.type": "org.apache.kafka.connect.transforms.ReplaceField$Value",
+      "transforms.FilterFields.whitelist": "id,class_id,file"
+    }
+  }

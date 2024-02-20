@@ -1,0 +1,397 @@
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.78 [0m
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.78 [0m[1mWelcome to the Bitnami elasticsearch container[0m
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.78 [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.79 [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.79 [0m
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.79 [0m[38;5;2mINFO [0m ==> ** Starting Elasticsearch setup **
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.82 [0m[38;5;3mWARN [0m ==> Setting ELASTICSEARCH_IS_DEDICATED_NODE is disabled.
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.82 [0m[38;5;3mWARN [0m ==> ELASTICSEARCH_NODE_ROLES will be ignored and Elasticsearch will asume all different roles.
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.82 [0m[38;5;2mINFO [0m ==> Configuring/Initializing Elasticsearch...
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.84 [0m[38;5;2mINFO [0m ==> Setting default configuration
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:43.88 [0m[38;5;2mINFO [0m ==> Configuring Elasticsearch cluster settings...
+elasticsearch  | warning: ignoring JAVA_HOME=/opt/bitnami/java; using ES_JAVA_HOME
+elasticsearch  | 
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:45.23 [0m[38;5;2mINFO [0m ==> ** Elasticsearch setup finished! **
+elasticsearch  | [38;5;6melasticsearch [38;5;5m20:21:45.24 [0m[38;5;2mINFO [0m ==> ** Starting Elasticsearch **
+elasticsearch  | warning: ignoring JAVA_HOME=/opt/bitnami/java; using ES_JAVA_HOME
+elasticsearch  | [2023-09-29T20:21:48,131][INFO ][o.e.n.Node               ] [3b530726a5ef] version[8.10.2], pid[305], build[tar/6d20dd8ce62365be9b1aca96427de4622e970e9e/2023-09-19T08:16:24.564900370Z], OS[Linux/5.15.90.1-microsoft-standard-WSL2/amd64], JVM[BellSoft/OpenJDK 64-Bit Server VM/17.0.8/17.0.8+7-LTS]
+elasticsearch  | [2023-09-29T20:21:48,133][INFO ][o.e.n.Node               ] [3b530726a5ef] JVM home [/opt/bitnami/java], using bundled JDK [false]
+elasticsearch  | [2023-09-29T20:21:48,133][INFO ][o.e.n.Node               ] [3b530726a5ef] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=org.elasticsearch.preallocate, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-795643076496542916, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m, -Xms1024m, -Xmx1024m, -XX:MaxDirectMemorySize=536870912, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.distribution.type=tar, --module-path=/opt/bitnami/elasticsearch/lib, --add-modules=jdk.net, --add-modules=org.elasticsearch.preallocate, -Djdk.module.main=org.elasticsearch.server]
+elasticsearch  | [2023-09-29T20:21:50,992][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [repository-url]
+postgres       | 
+postgres       | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres       | 
+postgres       | 2023-09-29 20:21:43.884 UTC [1] LOG:  starting PostgreSQL 16.0 (Debian 16.0-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres       | 2023-09-29 20:21:43.884 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres       | 2023-09-29 20:21:43.884 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres       | 2023-09-29 20:21:43.889 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres       | 2023-09-29 20:21:43.894 UTC [29] LOG:  database system was shut down at 2023-09-29 18:54:51 UTC
+postgres       | 2023-09-29 20:21:43.905 UTC [1] LOG:  database system is ready to accept connections
+postgres       | 2023-09-29 20:22:13.847 UTC [41] FATAL:  role "root" does not exist
+postgres       | 2023-09-29 20:22:43.934 UTC [51] FATAL:  role "root" does not exist
+elasticsearch  | [2023-09-29T20:21:50,992][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [rest-root]
+elasticsearch  | [2023-09-29T20:21:50,992][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-core]
+elasticsearch  | [2023-09-29T20:21:50,992][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-redact]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [ingest-user-agent]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-async-search]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-monitoring]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [repository-s3]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-analytics]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-ent-search]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-autoscaling]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [lang-painless]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-ml]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [lang-mustache]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [legacy-geo]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-ql]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [rank-rrf]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [analysis-common]
+elasticsearch  | [2023-09-29T20:21:50,993][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [transport-netty4]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [aggregations]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [ingest-common]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-identity-provider]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [frozen-indices]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-text-structure]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-shutdown]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [snapshot-repo-test-kit]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [ml-package-loader]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [kibana]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [constant-keyword]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-logstash]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-ccr]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-graph]
+elasticsearch  | [2023-09-29T20:21:50,994][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [parent-join]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-enrich]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [repositories-metering-api]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [transform]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [repository-azure]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [repository-gcs]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [spatial]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [apm]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [mapper-version]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [mapper-extras]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-rollup]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [percolator]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-stack]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [data-streams]
+elasticsearch  | [2023-09-29T20:21:50,995][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [reindex]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [rank-eval]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-security]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [blob-cache]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [searchable-snapshots]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-slm]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [snapshot-based-recoveries]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-watcher]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [old-lucene-versions]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-ilm]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-voting-only-node]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-deprecation]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-fleet]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-aggregate-metric]
+elasticsearch  | [2023-09-29T20:21:50,996][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-downsample]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-profiling]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [ingest-geoip]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-write-load-forecaster]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [search-business-rules]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [wildcard]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [ingest-attachment]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-sql]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [unsigned-long]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [runtime-fields-common]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-async]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [vector-tile]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [lang-expression]
+elasticsearch  | [2023-09-29T20:21:50,997][INFO ][o.e.p.PluginsService     ] [3b530726a5ef] loaded module [x-pack-eql]
+elasticsearch  | [2023-09-29T20:21:53,059][INFO ][o.e.e.NodeEnvironment    ] [3b530726a5ef] using [1] data paths, mounts [[/ (overlay)]], net usable_space [948.3gb], net total_space [1006.8gb], types [overlay]
+elasticsearch  | [2023-09-29T20:21:53,059][INFO ][o.e.e.NodeEnvironment    ] [3b530726a5ef] heap size [1gb], compressed ordinary object pointers [true]
+elasticsearch  | [2023-09-29T20:21:53,066][INFO ][o.e.n.Node               ] [3b530726a5ef] node name [3b530726a5ef], node ID [rYraig-HTxqNswXPBUj6_Q], cluster name [elasticsearch], roles [ingest, data_frozen, ml, data_hot, transform, data_content, data_warm, master, remote_cluster_client, data, data_cold]
+elasticsearch  | [2023-09-29T20:21:54,967][INFO ][o.e.x.s.Security         ] [3b530726a5ef] Security is disabled
+elasticsearch  | [2023-09-29T20:21:55,156][INFO ][o.e.x.p.ProfilingPlugin  ] [3b530726a5ef] Profiling is enabled
+elasticsearch  | [2023-09-29T20:21:55,168][INFO ][o.e.x.p.ProfilingPlugin  ] [3b530726a5ef] profiling index templates will not be installed or reinstalled
+elasticsearch  | [2023-09-29T20:21:55,478][INFO ][o.e.t.n.NettyAllocator   ] [3b530726a5ef] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=1gb}]
+elasticsearch  | [2023-09-29T20:21:55,495][INFO ][o.e.i.r.RecoverySettings ] [3b530726a5ef] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+elasticsearch  | [2023-09-29T20:21:55,531][INFO ][o.e.d.DiscoveryModule    ] [3b530726a5ef] using discovery type [single-node] and seed hosts providers [settings]
+elasticsearch  | [2023-09-29T20:21:56,068][INFO ][o.e.n.Node               ] [3b530726a5ef] initialized
+elasticsearch  | [2023-09-29T20:21:56,069][INFO ][o.e.n.Node               ] [3b530726a5ef] starting ...
+elasticsearch  | [2023-09-29T20:21:56,083][INFO ][o.e.x.s.c.f.PersistentCache] [3b530726a5ef] persistent cache index loaded
+elasticsearch  | [2023-09-29T20:21:56,083][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [3b530726a5ef] deprecation component started
+elasticsearch  | [2023-09-29T20:21:56,165][INFO ][o.e.t.TransportService   ] [3b530726a5ef] publish_address {172.18.0.6:9300}, bound_addresses {0.0.0.0:9300}
+elasticsearch  | [2023-09-29T20:21:56,243][WARN ][o.e.b.BootstrapChecks    ] [3b530726a5ef] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+elasticsearch  | [2023-09-29T20:21:56,244][INFO ][o.e.c.c.ClusterBootstrapService] [3b530726a5ef] this node has not joined a bootstrapped cluster yet; [cluster.initial_master_nodes] is set to [3b530726a5ef]
+elasticsearch  | [2023-09-29T20:21:56,247][INFO ][o.e.c.c.Coordinator      ] [3b530726a5ef] setting initial configuration to VotingConfiguration{rYraig-HTxqNswXPBUj6_Q}
+elasticsearch  | [2023-09-29T20:21:56,422][INFO ][o.e.c.s.MasterService    ] [3b530726a5ef] elected-as-master ([1] nodes joined in term 1)[_FINISH_ELECTION_, {3b530726a5ef}{rYraig-HTxqNswXPBUj6_Q}{GTVZ6uMbT329ooqk0xIa9w}{3b530726a5ef}{172.18.0.6}{172.18.0.6:9300}{cdfhilmrstw}{8.10.2}{7000099-8100299} completing election], term: 1, version: 1, delta: master node changed {previous [], current [{3b530726a5ef}{rYraig-HTxqNswXPBUj6_Q}{GTVZ6uMbT329ooqk0xIa9w}{3b530726a5ef}{172.18.0.6}{172.18.0.6:9300}{cdfhilmrstw}{8.10.2}{7000099-8100299}]}
+elasticsearch  | [2023-09-29T20:21:56,448][INFO ][o.e.c.c.CoordinationState] [3b530726a5ef] cluster UUID set to [hKKNeKZaSHiHw0J3Kvojtw]
+elasticsearch  | [2023-09-29T20:21:56,491][INFO ][o.e.c.s.ClusterApplierService] [3b530726a5ef] master node changed {previous [], current [{3b530726a5ef}{rYraig-HTxqNswXPBUj6_Q}{GTVZ6uMbT329ooqk0xIa9w}{3b530726a5ef}{172.18.0.6}{172.18.0.6:9300}{cdfhilmrstw}{8.10.2}{7000099-8100299}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+elasticsearch  | [2023-09-29T20:21:56,515][INFO ][o.e.c.f.AbstractFileWatchingService] [3b530726a5ef] starting file watcher ...
+elasticsearch  | [2023-09-29T20:21:56,519][INFO ][o.e.c.f.AbstractFileWatchingService] [3b530726a5ef] file settings service up and running [tid=36]
+elasticsearch  | [2023-09-29T20:21:56,524][INFO ][o.e.c.c.NodeJoinExecutor ] [3b530726a5ef] node-join: [{3b530726a5ef}{rYraig-HTxqNswXPBUj6_Q}{GTVZ6uMbT329ooqk0xIa9w}{3b530726a5ef}{172.18.0.6}{172.18.0.6:9300}{cdfhilmrstw}{8.10.2}{7000099-8100299}] with reason [completing election]
+elasticsearch  | [2023-09-29T20:21:56,525][INFO ][o.e.h.AbstractHttpServerTransport] [3b530726a5ef] publish_address {172.18.0.6:9200}, bound_addresses {0.0.0.0:9200}
+elasticsearch  | [2023-09-29T20:21:56,525][INFO ][o.e.n.Node               ] [3b530726a5ef] started {3b530726a5ef}{rYraig-HTxqNswXPBUj6_Q}{GTVZ6uMbT329ooqk0xIa9w}{3b530726a5ef}{172.18.0.6}{172.18.0.6:9300}{cdfhilmrstw}{8.10.2}{7000099-8100299}{xpack.installed=true, transform.config_version=10.0.0}
+elasticsearch  | [2023-09-29T20:21:56,572][INFO ][o.e.g.GatewayService     ] [3b530726a5ef] recovered [0] indices into cluster_state
+elasticsearch  | [2023-09-29T20:21:56,706][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.monitoring-logstash-mb] for index patterns [.monitoring-logstash-8-*]
+elasticsearch  | [2023-09-29T20:21:56,719][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+elasticsearch  | [2023-09-29T20:21:56,730][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+elasticsearch  | [2023-09-29T20:21:56,739][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+elasticsearch  | [2023-09-29T20:21:56,754][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+elasticsearch  | [2023-09-29T20:21:56,773][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.monitoring-kibana-mb] for index patterns [.monitoring-kibana-8-*]
+elasticsearch  | [2023-09-29T20:21:56,789][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.monitoring-ent-search-mb] for index patterns [.monitoring-ent-search-8-*]
+elasticsearch  | [2023-09-29T20:21:56,803][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+elasticsearch  | [2023-09-29T20:21:56,823][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.monitoring-beats-mb] for index patterns [.monitoring-beats-8-*]
+elasticsearch  | [2023-09-29T20:21:56,835][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [behavioral_analytics-events-mappings]
+elasticsearch  | [2023-09-29T20:21:56,838][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [metrics-settings]
+elasticsearch  | [2023-09-29T20:21:56,841][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [search-acl-filter] for index patterns [.search-acl-filter-*]
+elasticsearch  | [2023-09-29T20:21:56,844][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [elastic-connectors-sync-jobs-settings]
+elasticsearch  | [2023-09-29T20:21:56,849][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [elastic-connectors-sync-jobs-mappings]
+elasticsearch  | [2023-09-29T20:21:56,855][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [synthetics-mappings]
+elasticsearch  | [2023-09-29T20:21:56,858][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [logs-mappings]
+elasticsearch  | [2023-09-29T20:21:56,860][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [elastic-connectors-settings]
+elasticsearch  | [2023-09-29T20:21:56,862][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [synthetics-settings]
+elasticsearch  | [2023-09-29T20:21:56,873][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [ecs@dynamic_templates]
+elasticsearch  | [2023-09-29T20:21:56,877][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [metrics-mappings]
+elasticsearch  | [2023-09-29T20:21:56,885][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.kibana-reporting] for index patterns [.kibana-reporting*]
+elasticsearch  | [2023-09-29T20:21:56,905][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.monitoring-es-mb] for index patterns [.monitoring-es-8-*]
+elasticsearch  | [2023-09-29T20:21:56,908][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [metrics-tsdb-settings]
+elasticsearch  | [2023-09-29T20:21:56,913][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [elastic-connectors-mappings]
+elasticsearch  | [2023-09-29T20:21:56,916][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [data-streams-mappings]
+elasticsearch  | [2023-09-29T20:21:56,921][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [ilm-history] for index patterns [ilm-history-5*]
+elasticsearch  | [2023-09-29T20:21:56,925][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.slm-history] for index patterns [.slm-history-5*]
+elasticsearch  | [2023-09-29T20:21:56,928][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [.deprecation-indexing-mappings]
+elasticsearch  | [2023-09-29T20:21:56,932][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.fleet-fileds-fromhost-meta] for index patterns [.fleet-fileds-fromhost-meta-*]
+elasticsearch  | [2023-09-29T20:21:56,938][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.fleet-fileds-tohost-data] for index patterns [.fleet-fileds-tohost-data-*]
+elasticsearch  | [2023-09-29T20:21:56,944][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.fleet-fileds-fromhost-data] for index patterns [.fleet-fileds-fromhost-data-*]
+elasticsearch  | [2023-09-29T20:21:56,946][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [.deprecation-indexing-settings]
+elasticsearch  | [2023-09-29T20:21:56,957][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.watch-history-16] for index patterns [.watcher-history-16*]
+elasticsearch  | [2023-09-29T20:21:56,963][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.fleet-fileds-tohost-meta] for index patterns [.fleet-fileds-tohost-meta-*]
+elasticsearch  | [2023-09-29T20:21:57,002][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [elastic-connectors-sync-jobs] for index patterns [.elastic-connectors-sync-jobs-v1]
+elasticsearch  | [2023-09-29T20:21:57,007][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [elastic-connectors] for index patterns [.elastic-connectors-v1]
+elasticsearch  | [2023-09-29T20:21:57,012][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [synthetics] for index patterns [synthetics-*-*]
+elasticsearch  | [2023-09-29T20:21:57,017][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [metrics] for index patterns [metrics-*-*]
+elasticsearch  | [2023-09-29T20:21:57,022][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [.deprecation-indexing-template] for index patterns [.logs-deprecation.*]
+elasticsearch  | [2023-09-29T20:21:57,047][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [behavioral_analytics-events-default_policy]
+elasticsearch  | [2023-09-29T20:21:57,084][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [logs]
+elasticsearch  | [2023-09-29T20:21:57,106][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [synthetics]
+elasticsearch  | [2023-09-29T20:21:57,130][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [slm-history-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,151][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [7-days-default]
+elasticsearch  | [2023-09-29T20:21:57,170][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [metrics]
+elasticsearch  | [2023-09-29T20:21:57,189][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [365-days-default]
+elasticsearch  | [2023-09-29T20:21:57,209][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [ilm-history-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,228][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [30-days-default]
+elasticsearch  | [2023-09-29T20:21:57,246][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [180-days-default]
+elasticsearch  | [2023-09-29T20:21:57,296][INFO ][o.e.x.c.t.IndexTemplateRegistry] [3b530726a5ef] adding ingest pipeline behavioral_analytics-events-final_pipeline
+elasticsearch  | [2023-09-29T20:21:57,296][INFO ][o.e.x.c.t.IndexTemplateRegistry] [3b530726a5ef] adding ingest pipeline ent-search-generic-ingestion
+elasticsearch  | [2023-09-29T20:21:57,296][INFO ][o.e.x.c.t.IndexTemplateRegistry] [3b530726a5ef] adding ingest pipeline logs@json-message
+elasticsearch  | [2023-09-29T20:21:57,298][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [behavioral_analytics-events-settings]
+elasticsearch  | [2023-09-29T20:21:57,324][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [behavioral_analytics-events-default] for index patterns [behavioral_analytics-events-*]
+elasticsearch  | [2023-09-29T20:21:57,342][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.fleet-actions-results-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,363][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.fleet-file-tohost-data-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,384][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.monitoring-8-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,404][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [watch-history-ilm-policy-16]
+elasticsearch  | [2023-09-29T20:21:57,424][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [90-days-default]
+elasticsearch  | [2023-09-29T20:21:57,445][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.deprecation-indexing-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,465][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.fleet-file-tohost-meta-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,484][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.fleet-file-fromhost-meta-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,505][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [3b530726a5ef] adding index lifecycle policy [.fleet-file-fromhost-data-ilm-policy]
+elasticsearch  | [2023-09-29T20:21:57,562][INFO ][o.e.h.n.s.HealthNodeTaskExecutor] [3b530726a5ef] Node [{3b530726a5ef}{rYraig-HTxqNswXPBUj6_Q}] is selected as the current health node.
+elasticsearch  | [2023-09-29T20:21:57,718][INFO ][o.e.l.ClusterStateLicenseService] [3b530726a5ef] license [b08616ee-ee61-4083-85be-78259068b453] mode [basic] - valid
+elasticsearch  | [2023-09-29T20:21:57,740][INFO ][o.e.x.c.t.IndexTemplateRegistry] [3b530726a5ef] adding ingest pipeline logs-default-pipeline
+elasticsearch  | [2023-09-29T20:21:57,742][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding component template [logs-settings]
+elasticsearch  | [2023-09-29T20:21:57,770][INFO ][o.e.c.m.MetadataIndexTemplateService] [3b530726a5ef] adding index template [logs] for index patterns [logs-*-*]
+neo4j          | 2023-09-29 20:21:46.340+0000 INFO  Logging config in use: File '/var/lib/neo4j/conf/user-logs.xml'
+neo4j          | 2023-09-29 20:21:46.363+0000 INFO  Starting...
+neo4j          | 2023-09-29 20:21:47.262+0000 INFO  This instance is ServerId{326aaba2} (326aaba2-d9aa-48f1-98e7-7661c2ba1940)
+neo4j          | 2023-09-29 20:21:48.040+0000 INFO  ======== Neo4j 5.12.0 ========
+neo4j          | 2023-09-29 20:21:49.345+0000 INFO  Bolt enabled on 0.0.0.0:7687.
+neo4j          | 2023-09-29 20:21:49.977+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+neo4j          | 2023-09-29 20:21:49.977+0000 INFO  Remote interface available at http://localhost:7474/
+neo4j          | 2023-09-29 20:21:49.980+0000 INFO  id: F25BEF28A0A94BECD1BC7B26CB537C590D8B8B2143AC8550B75C1769A78A5939
+neo4j          | 2023-09-29 20:21:49.980+0000 INFO  name: system
+neo4j          | 2023-09-29 20:21:49.980+0000 INFO  creationDate: 2023-09-29T18:34:44.385Z
+neo4j          | 2023-09-29 20:21:49.980+0000 INFO  Started.
+redis          | 1:C 29 Sep 2023 20:21:43.367 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis          | 1:C 29 Sep 2023 20:21:43.367 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis          | 1:C 29 Sep 2023 20:21:43.367 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis          | 1:C 29 Sep 2023 20:21:43.367 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis          | 1:M 29 Sep 2023 20:21:43.367 * monotonic clock: POSIX clock_gettime
+redis          | 1:M 29 Sep 2023 20:21:43.368 * Running mode=standalone, port=6379.
+redis          | 1:M 29 Sep 2023 20:21:43.369 * Server initialized
+redis          | 1:M 29 Sep 2023 20:21:43.369 * Loading RDB produced by version 7.2.1
+redis          | 1:M 29 Sep 2023 20:21:43.369 * RDB age 5212 seconds
+redis          | 1:M 29 Sep 2023 20:21:43.369 * RDB memory usage when created 0.85 Mb
+redis          | 1:M 29 Sep 2023 20:21:43.369 * Done loading RDB, keys loaded: 1, keys expired: 0.
+redis          | 1:M 29 Sep 2023 20:21:43.369 * DB loaded from disk: 0.001 seconds
+redis          | 1:M 29 Sep 2023 20:21:43.369 * Ready to accept connections tcp
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.043+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.045+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":21},"outgoing":{"minWireVersion":6,"maxWireVersion":21},"isInternalClient":true}}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.045+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.048+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.048+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.048+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.048+00:00"},"s":"I",  "c":"TENANT_M", "id":7091600, "ctx":"main","msg":"Starting TenantMigrationAccessBlockerRegistry"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.049+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"81aa5bcd5dac"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.049+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"7.0.1","gitVersion":"425a0454d12f2664f9e31002bbe4a386a25345b5","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.049+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.049+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"},"security":{"authorization":"enabled"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.050+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.050+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.050+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=3388M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.876+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":826}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.876+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.885+00:00"},"s":"W",  "c":"CONTROL",  "id":22178,   "ctx":"initandlisten","msg":"/sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'","tags":["startupWarnings"]}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.885+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.889+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":21},"outgoing":{"minWireVersion":6,"maxWireVersion":21},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":21,"maxWireVersion":21},"outgoing":{"minWireVersion":21,"maxWireVersion":21},"isInternalClient":true}}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.889+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"7.0","context":"startup"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.889+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.890+00:00"},"s":"I",  "c":"CONTROL",  "id":6608200, "ctx":"initandlisten","msg":"Initializing cluster server parameters from disk"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.890+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.891+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.906+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.906+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.906+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.907+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+mongo          | {"t":{"$date":"2023-09-29T20:21:44.907+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.185+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53926","uuid":{"uuid":{"$uuid":"6f342b87-200c-4910-a6f8-872a09c0c874"}},"connectionId":1,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.189+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"127.0.0.1:53926","client":"conn1","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.198+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53932","uuid":{"uuid":{"$uuid":"c49cfad3-c262-43f6-9572-97829ffc96f3"}},"connectionId":2,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.198+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53936","uuid":{"uuid":{"$uuid":"173cf6e4-1f9e-4b80-8f8b-54ae6fae30c1"}},"connectionId":3,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.198+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"127.0.0.1:53932","client":"conn2","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.199+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"127.0.0.1:53936","client":"conn3","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.200+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn2","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.202+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53950","uuid":{"uuid":{"$uuid":"6e385cd3-14b9-43d2-852c-dac52ca6c3e0"}},"connectionId":4,"connectionCount":4}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.203+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"127.0.0.1:53950","client":"conn4","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.388+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn4","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":185}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.394+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"127.0.0.1:53950","uuid":{"uuid":{"$uuid":"6e385cd3-14b9-43d2-852c-dac52ca6c3e0"}},"connectionId":4,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.395+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"127.0.0.1:53926","uuid":{"uuid":{"$uuid":"6f342b87-200c-4910-a6f8-872a09c0c874"}},"connectionId":1,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.395+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"127.0.0.1:53936","uuid":{"uuid":{"$uuid":"173cf6e4-1f9e-4b80-8f8b-54ae6fae30c1"}},"connectionId":3,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:14.395+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"127.0.0.1:53932","uuid":{"uuid":{"$uuid":"c49cfad3-c262-43f6-9572-97829ffc96f3"}},"connectionId":2,"connectionCount":0}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.769+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:50076","uuid":{"uuid":{"$uuid":"0d3ffd82-5a41-43c0-84de-518b1af70c13"}},"connectionId":5,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.771+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"127.0.0.1:50076","client":"conn5","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.780+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:50086","uuid":{"uuid":{"$uuid":"1c471377-8d7b-48cb-bb98-72f1785422ce"}},"connectionId":6,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.780+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:50088","uuid":{"uuid":{"$uuid":"bf3db6d3-e213-49e0-bb42-8e19251cdcfd"}},"connectionId":7,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.781+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"127.0.0.1:50086","client":"conn6","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.781+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"127.0.0.1:50088","client":"conn7","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.782+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn6","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.784+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:50090","uuid":{"uuid":{"$uuid":"68663395-0263-4763-8aa7-045b5b6878f7"}},"connectionId":8,"connectionCount":4}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.785+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"127.0.0.1:50090","client":"conn8","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.971+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn8","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":185}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.978+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"127.0.0.1:50076","uuid":{"uuid":{"$uuid":"0d3ffd82-5a41-43c0-84de-518b1af70c13"}},"connectionId":5,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.978+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"127.0.0.1:50090","uuid":{"uuid":{"$uuid":"68663395-0263-4763-8aa7-045b5b6878f7"}},"connectionId":8,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.978+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"127.0.0.1:50088","uuid":{"uuid":{"$uuid":"bf3db6d3-e213-49e0-bb42-8e19251cdcfd"}},"connectionId":7,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:22:45.978+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"127.0.0.1:50086","uuid":{"uuid":{"$uuid":"1c471377-8d7b-48cb-bb98-72f1785422ce"}},"connectionId":6,"connectionCount":0}}
+postgres       | 2023-09-29 20:23:14.035 UTC [60] FATAL:  role "root" does not exist
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.402+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:47780","uuid":{"uuid":{"$uuid":"2449bcda-57b1-4af6-86d4-ea1c6d344342"}},"connectionId":9,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.404+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"127.0.0.1:47780","client":"conn9","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.414+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:47796","uuid":{"uuid":{"$uuid":"792a81f2-db95-4ac6-b987-a8f3ffee734a"}},"connectionId":10,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.414+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:47798","uuid":{"uuid":{"$uuid":"664ac068-58d9-47a4-bacd-682baa067d43"}},"connectionId":11,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.415+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"127.0.0.1:47796","client":"conn10","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.415+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"127.0.0.1:47798","client":"conn11","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.417+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn10","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.419+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:47802","uuid":{"uuid":{"$uuid":"624b0929-276d-4b00-846e-1db6965d3d3a"}},"connectionId":12,"connectionCount":4}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.419+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"127.0.0.1:47802","client":"conn12","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.633+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn12","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":213}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.639+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"127.0.0.1:47780","uuid":{"uuid":{"$uuid":"2449bcda-57b1-4af6-86d4-ea1c6d344342"}},"connectionId":9,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.640+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"127.0.0.1:47802","uuid":{"uuid":{"$uuid":"624b0929-276d-4b00-846e-1db6965d3d3a"}},"connectionId":12,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.640+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"127.0.0.1:47798","uuid":{"uuid":{"$uuid":"664ac068-58d9-47a4-bacd-682baa067d43"}},"connectionId":11,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:17.640+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"127.0.0.1:47796","uuid":{"uuid":{"$uuid":"792a81f2-db95-4ac6-b987-a8f3ffee734a"}},"connectionId":10,"connectionCount":0}}
+postgres       | 2023-09-29 20:23:44.183 UTC [69] FATAL:  role "root" does not exist
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.007+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:36278","uuid":{"uuid":{"$uuid":"2c79e936-d9e3-4a42-8800-0a8bf2e0f5f9"}},"connectionId":13,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.010+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"127.0.0.1:36278","client":"conn13","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.019+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:36290","uuid":{"uuid":{"$uuid":"f0865d88-408c-45b0-9cc9-051da22718e4"}},"connectionId":14,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.019+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:36292","uuid":{"uuid":{"$uuid":"3fbc46fd-eb6d-4f1c-a2cb-693b6fbfd30c"}},"connectionId":15,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.020+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn14","msg":"client metadata","attr":{"remote":"127.0.0.1:36290","client":"conn14","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.020+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn15","msg":"client metadata","attr":{"remote":"127.0.0.1:36292","client":"conn15","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.022+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn14","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.024+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:36296","uuid":{"uuid":{"$uuid":"1cc0240f-d62a-4f67-80a9-3c3276879b38"}},"connectionId":16,"connectionCount":4}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.025+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn16","msg":"client metadata","attr":{"remote":"127.0.0.1:36296","client":"conn16","doc":{"application":{"name":"mongosh 1.10.6"},"driver":{"name":"nodejs|mongosh","version":"5.7.0|1.10.6"},"platform":"Node.js v16.20.2, LE","os":{"name":"linux","architecture":"x64","version":"5.15.90.1-microsoft-standard-WSL2","type":"Linux"}}}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.214+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn16","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":189}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.219+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn13","msg":"Connection ended","attr":{"remote":"127.0.0.1:36278","uuid":{"uuid":{"$uuid":"2c79e936-d9e3-4a42-8800-0a8bf2e0f5f9"}},"connectionId":13,"connectionCount":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.219+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn16","msg":"Connection ended","attr":{"remote":"127.0.0.1:36296","uuid":{"uuid":{"$uuid":"1cc0240f-d62a-4f67-80a9-3c3276879b38"}},"connectionId":16,"connectionCount":2}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.219+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn15","msg":"Connection ended","attr":{"remote":"127.0.0.1:36292","uuid":{"uuid":{"$uuid":"3fbc46fd-eb6d-4f1c-a2cb-693b6fbfd30c"}},"connectionId":15,"connectionCount":1}}
+mongo          | {"t":{"$date":"2023-09-29T20:23:49.219+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn14","msg":"Connection ended","attr":{"remote":"127.0.0.1:36290","uuid":{"uuid":{"$uuid":"f0865d88-408c-45b0-9cc9-051da22718e4"}},"connectionId":14,"connectionCount":0}}
+postgres       | 2023-09-29 20:24:14.299 UTC [79] FATAL:  role "root" does not exist
+postgres       | 2023-09-29 20:24:15.240 UTC [1] LOG:  received fast shutdown request
+postgres       | 2023-09-29 20:24:15.242 UTC [1] LOG:  aborting any active transactions
+postgres       | 2023-09-29 20:24:15.246 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+postgres       | 2023-09-29 20:24:15.246 UTC [27] LOG:  shutting down
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.247+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.247+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.247+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.247+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+neo4j          | 2023-09-29 20:24:15.249+0000 INFO  Neo4j Server shutdown initiated by request
+neo4j          | 2023-09-29 20:24:15.249+0000 INFO  Stopping...
+postgres       | 2023-09-29 20:24:15.250 UTC [27] LOG:  checkpoint starting: shutdown immediate
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.253+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.253+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.253+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.253+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+elasticsearch  | [2023-09-29T20:24:15,255][INFO ][o.e.n.Node               ] [3b530726a5ef] stopping ...
+elasticsearch  | [2023-09-29T20:24:15,256][INFO ][o.e.c.f.AbstractFileWatchingService] [3b530726a5ef] shutting down watcher thread
+elasticsearch  | [2023-09-29T20:24:15,257][INFO ][o.e.c.f.AbstractFileWatchingService] [3b530726a5ef] watcher service stopped
+elasticsearch  | [2023-09-29T20:24:15,259][INFO ][o.e.x.w.WatcherService   ] [3b530726a5ef] stopping watch service, reason [shutdown initiated]
+elasticsearch  | [2023-09-29T20:24:15,259][INFO ][o.e.x.w.WatcherLifeCycleService] [3b530726a5ef] watcher has stopped and shutdown
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"TenantMigrationBlockerNet","msg":"Killing all outstanding egress activity."}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"ASIO",     "id":6529201, "ctx":"SignalHandler","msg":"Network interface redundant shutdown","attr":{"state":"Stopped"}}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"SignalHandler","msg":"Killing all outstanding egress activity."}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.254+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.255+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,use_timestamp=false,"}}
+redis          | 1:signal-handler (1696019055) Received SIGTERM scheduling shutdown...
+postgres       | 2023-09-29 20:24:15.266 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.002 s, total=0.020 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1954CC8, redo lsn=0/1954CC8
+postgres       | 2023-09-29 20:24:15.270 UTC [1] LOG:  database system is shut down
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.274+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":19}}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.274+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.274+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.274+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.279+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongo          | {"t":{"$date":"2023-09-29T20:24:15.280+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+redis          | 1:M 29 Sep 2023 20:24:15.361 * User requested shutdown...
+redis          | 1:M 29 Sep 2023 20:24:15.361 * Saving the final RDB snapshot before exiting.
+redis          | 1:M 29 Sep 2023 20:24:15.364 * DB saved on disk
+redis          | 1:M 29 Sep 2023 20:24:15.364 # Redis is now ready to exit, bye bye...
+postgres exited with code 0
+postgres exited with code 0
+elasticsearch  | [2023-09-29T20:24:15,756][INFO ][o.e.n.Node               ] [3b530726a5ef] stopped
+elasticsearch  | [2023-09-29T20:24:15,756][INFO ][o.e.n.Node               ] [3b530726a5ef] closing ...
+elasticsearch  | [2023-09-29T20:24:15,766][INFO ][o.e.n.Node               ] [3b530726a5ef] closed
+mongo exited with code 0
+mongo exited with code 0
+redis exited with code 0
+redis exited with code 0
+elasticsearch exited with code 0
+neo4j          | 2023-09-29 20:24:20.461+0000 INFO  Stopped.
+neo4j exited with code 0
