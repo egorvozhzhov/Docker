@@ -1,6 +1,7 @@
 from elasticsearch import Elasticsearch
 import psycopg2
 import redis
+import json
 
 from neo4j import GraphDatabase
 
@@ -36,11 +37,11 @@ def find_mat(phrase):
         "size": 10000,
         "query": {
             "match_phrase": {
-                "file": phrase
+                "text": phrase
             }
         }
     }
-    result = es.search(index='class_materials_index', body=query)
+    result = es.search(index='class_materials', body=query)
 
     class_ids = [hit['_source']['class_id'] for hit in result['hits']['hits']]
 
@@ -53,7 +54,7 @@ def find_schedules_by_class_id(class_ids):
     uri = "bolt://neo4j:7687"
     data = []
     query = (
-        "MATCH (c:Class {type: 'lection', id: $classId})<-[:HAS_CLASS]-(co:Course)<-[:STUDY_COURSE]-(g:Group)<-[:STUDY_IN]-(s:Student) "
+        "MATCH (c:Class {id: $classId})<-[:HAS_CLASS]-(co:Course)<-[:STUDY_COURSE]-(g:Group)<-[:STUDY_IN]-(s:Student) "
         "RETURN DISTINCT s.id as student_id"
     )
 
@@ -109,16 +110,20 @@ def get_codes(students_ids, start_date, end_date, schedule_ids):
     return result
 
 
-def get_info(student):
+def get_info(key):
     r = redis.Redis(
         host='redis',
         port=6379,
         decode_responses=True
     )
-    student_info = r.hget(student, "fullname")
-    student_code = r.hget(student, "code")
-    return [student_info, student_code]
-  
+    data = r.get(key)
+    data = json.loads(data)
+    fullname = data.get('fullname')
+    code = data.get('code')
+    return [fullname, code]
+
+
+
 
 
 

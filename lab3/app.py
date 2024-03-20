@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from lab3 import start_lab3
+from lab3 import get_volume_of_listened_hours
 from functools import wraps
 import requests
 
@@ -36,13 +36,8 @@ def token_valid(f):
 def get_lab3():
     group = request.args.get('group')
 
-    try:
-        volumes = start_lab3(group)
-
-    except ValueError as err:
-        return jsonify({"error": str(err)}), 204
-    dict_volumes = [{'class_title':volumes[i][0], 'fullname':str(volumes[i][1]), 'code':volumes[i][2], 'attended_hourses':volumes[i][3], 'planned_hourses':volumes[i][4]} for i in range(len(volumes))]
-    return jsonify({"statistic": dict_volumes}), 200
+    courses = get_volume_of_listened_hours(group)
+    return jsonify({'group': group, "courses": courses}), 200
 
 
 if __name__ == '__main__':
