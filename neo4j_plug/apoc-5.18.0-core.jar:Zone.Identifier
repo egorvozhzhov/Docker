@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://github.com/neo4j/apoc/releases/tag/5.18.0
-HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/525054099/10a4628d-e79b-4503-ba1b-d193a5340ef1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240316%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240316T110640Z&X-Amz-Expires=300&X-Amz-Signature=0238e8877b0be330afee21609fe5063df71ab6ff5b53e1c27385b0376853026f&X-Amz-SignedHeaders=host&actor_id=71019753&key_id=0&repo_id=525054099&response-content-disposition=attachment%3B%20filename%3Dapoc-5.18.0-core.jar&response-content-type=application%2Foctet-stream

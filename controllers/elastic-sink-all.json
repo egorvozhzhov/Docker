@@ -1,12 +1,12 @@
 {
-    "name": "elasticsearch-sink-connector",
-    "config": {
-      "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
-      "tasks.max": "1",
-      "topics.regex": "*",
-      "key.ignore": "true",
-      "schema.ignore": "true",
-      "connection.url": "http://elasticsearch:9200/",
-      "type.name": "_doc"
-    }
+  "name": "elasticsearch-sink-connector",
+  "config": {
+    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+    "tasks.max": "1",
+    "topics": "class_type, classes, courses, department_speciality, departments, group_course, groups, institutes, schedule, specialities, students, universities, attendances, attendances_y2023_w35, attendances_y2023_w36, attendances_y2023_w37, attendances_y2023_w38, attendances_y2023_w39, attendances_y2023_w40, attendances_y2023_w41, attendances_y2023_w42, attendances_y2023_w43, attendances_y2023_w44, attendances_y2023_w45, attendances_y2023_w46, attendances_y2023_w47, attendances_y2023_w48, class_materials",
+    "key.ignore": "true",
+    "schema.ignore": "true",
+    "connection.url": "http://elasticsearch:9200/",
+    "type.name": "_doc"
   }
+}

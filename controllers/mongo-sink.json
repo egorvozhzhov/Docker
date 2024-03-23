@@ -1,0 +1,11 @@
+{
+    "name": "mongo-sink-connector",
+    "config": {
+      "connector.class" : "com.mongodb.kafka.connect.MongoSinkConnector",
+      "connection.uri" : "mongodb://mongo:27017",
+      "database" : "practice",
+      "collection" : "universities",
+      "topics" : "universities, institutes, departments",
+      "change.data.capture.handler" : "com.mongodb.kafka.connect.sink.cdc.debezium.rdbms.RdbmsHandler"
+    }
+  }

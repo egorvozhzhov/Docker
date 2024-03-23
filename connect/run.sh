@@ -15,5 +15,5 @@ confluent-hub install neo4j/kafka-connect-neo4j:5.0.3 \
   --no-prompt
 
 cp /etc/connect/kafka-connect-redis-assembly-6.0.3.jar $COMPONENT_DIR/kafka-connect-redis-assembly-6.0.3.jar
-
+cp /etc/connect/mongo-cdc-connector.jar $COMPONENT_DIR/mongo-cdc-connector.jar
 /etc/confluent/docker/run

@@ -49,6 +49,19 @@ services:
     volumes:
       - neo4j_data:/data
       - ./neo4j_plug:/plugins
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    environment: 
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    ports: 
+      - 27017:27017
+    volumes:
+      - mongo_data:/data/db
+
   
   influxdb:
     image: influxdb:2.7.5-alpine
@@ -244,3 +257,4 @@ volumes:
   lab2_data:
   lab3_data:
   auth_data:
+  mongo_data:
